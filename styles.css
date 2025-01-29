@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  height: 100vh;
+}
+
+.header {
+  background-color: hsl(0, 0, 100%);
+}
+
+.sidebar {
+  background-color: hsl(201, 79%, 46%);
+  grid-row: 1 / span 2;
+}
+
+.main-content { 
+  background-color: hsl(214, 32%, 91%);
+}

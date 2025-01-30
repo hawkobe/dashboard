@@ -1,23 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
   height: 100vh;
   --sidebar-blue: hsl(201, 79%, 46%);
-  --header-white: hsl(0, 0, 100%);
+  --header-white: hsl(0, 0%, 99%);
   --main-background: hsl(214, 32%, 91%);
+}
+
+.container > div {
+  padding: 0 30px;
+}
+
+h3 {
+  padding-top: 5px;
 }
 
 .header {
   background-color: var(--header-white);
   display: grid;
   grid-template-columns: 2fr 1fr;
+  position: relative;
+  box-shadow: 0 3px 5px hsl(0, 0%, 81%);
 }
 
 .search {
   display: flex;
   align-items: center;
-  padding: 0 30px;
 }
 
 .search > input {
@@ -29,22 +43,54 @@
 }
 
 .search > label {
-  padding: 5px 10px 0 10px;
+  padding: 5px 10px 0 0;
 }
 
 .profile-icons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
 }
 
 .profile-icons > * {
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .avatar img {
   height: 50px;
   width: 60px;
+}
+
+.user-name,
+.profile-greeting p {
+  font-weight: bold;
+}
+
+.profile-name-announce,
+.profile-name-anounce .profile-greeting {
+  display: flex;
+  align-items: center;
+}
+
+.profile-name-avatar img {
+  height: 80px;
+  width: 100px;
+  padding-right: 10px;
+}
+
+.post-action-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  color: var(--header-white);
+  background-color: var(--sidebar-blue);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
 }
 
 .sidebar {
@@ -55,3 +101,4 @@
 .main-content { 
   background-color: var(--main-background);
 }
+

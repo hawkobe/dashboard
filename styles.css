@@ -3,17 +3,20 @@
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
   height: 100vh;
+  --sidebar-blue: hsl(201, 79%, 46%);
+  --header-white: hsl(0, 0, 100%);
+  --main-background: hsl(214, 32%, 91%);
 }
 
 .header {
-  background-color: hsl(0, 0, 100%);
+  background-color: var(--header-white);
 }
 
 .sidebar {
-  background-color: hsl(201, 79%, 46%);
+  background-color: var(--sidebar-blue);
   grid-row: 1 / span 2;
 }
 
 .main-content { 
-  background-color: hsl(214, 32%, 91%);
+  background-color: var(--main-background);
 }

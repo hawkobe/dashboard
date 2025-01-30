@@ -10,6 +10,8 @@
 
 .header {
   background-color: var(--header-white);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .sidebar {

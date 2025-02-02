@@ -31,7 +31,7 @@ a:visited {
 }
 
 a:hover {
-  color: hsl(203deg, 97%, 36%);
+  color: hsl(203deg 97% 36%);
 }
 
 .header {
@@ -113,7 +113,7 @@ button {
 }
 
 button:hover {
-  background-color: hsl(203deg, 97%, 36%);
+  background-color: hsl(203deg 97% 36%);
   cursor: pointer;
 }
 

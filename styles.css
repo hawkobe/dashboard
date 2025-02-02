@@ -22,6 +22,18 @@ h3 {
   padding-top: 5px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: hsl(203deg, 97%, 36%);
+}
+
 .header {
   background-color: var(--header-white);
   display: grid;
@@ -98,6 +110,11 @@ button {
   border-radius: 20px;
   padding: 10px 20px;
   font-weight: bold;
+}
+
+button:hover {
+  background-color: hsl(203deg, 97%, 36%);
+  cursor: pointer;
 }
 
 .sidebar {

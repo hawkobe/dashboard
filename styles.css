@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Roboto", serif;
+  font-family: Roboto, serif;
 }
 
 .container {
@@ -12,9 +12,10 @@ body {
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
   height: 100vh;
-  --sidebar-blue: hsl(201, 79%, 46%);
-  --header-white: hsl(0, 0%, 99%);
-  --main-background: hsl(214, 32%, 91%);
+
+  --sidebar-blue: hsl(201deg 79% 46%);
+  --header-white: hsl(0deg 0% 99%);
+  --main-background: hsl(214deg 32% 91%);
 }
 
 h3 {
@@ -26,7 +27,7 @@ h3 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   position: relative;
-  box-shadow: 0 3px 5px hsl(0, 0%, 81%);
+  box-shadow: 0 3px 5px hsl(0deg 0% 81%);
   padding: 0 30px;
 }
 
@@ -68,8 +69,7 @@ img[src$="penguin.png"] {
 }
 
 .user-name,
-.profile-greeting p,
-.user-project p:first-of-type {
+.profile-greeting p {
   font-weight: bold;
 }
 
@@ -132,11 +132,11 @@ ul {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(2, 1fr);
-  padding: 0 30px 30px 30px;
+  padding: 0 30px 30px;
 }
 
 h3.main-title {
-  padding: 25px 0 10px 0;
+  padding: 25px 0 10px;
 }
 
 .left-main-area {
@@ -156,7 +156,7 @@ h3.main-title {
   padding: 25px;
   background-color: var(--header-white);
   border-radius: 10px;
-  box-shadow: 3px 3px 5px hsl(0, 0%, 81%);
+  box-shadow: 3px 3px 5px hsl(0deg 0% 81%);
 }
 
 .project-card {
@@ -174,7 +174,7 @@ h3.main-title {
 .card-actions img {
   height: 20px;
   width: 20px;
-  padding: 10px 10px 0 10px;
+  padding: 10px 10px 0;
 }
 
 .upper-right-main,
@@ -197,16 +197,20 @@ h3.main-title {
 
 .project-card p,
 .announcement-card p {
-  color: hsl(0, 0%, 64%)
+  color: hsl(0deg 0% 64%)
 }
 
 .announcement-card .border {
-  border-top: 1px solid hsl(0, 0%, 64%);
+  border-top: 1px solid hsl(0deg 0% 64%);
 }
 
 .announcement-card p,
 .profile-greeting p {
   font-size: 12px;
+}
+
+.user-project p:first-of-type {
+  font-weight: bold;
 }
 
 .announcement-card div:last-child p {

@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", serif;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -11,11 +15,6 @@
   --sidebar-blue: hsl(201, 79%, 46%);
   --header-white: hsl(0, 0%, 99%);
   --main-background: hsl(214, 32%, 91%);
-}
-
-.header,
-.sidebar {
-  padding: 0 30px;
 }
 
 h3 {
@@ -28,6 +27,7 @@ h3 {
   grid-template-columns: 2fr 1fr;
   position: relative;
   box-shadow: 0 3px 5px hsl(0, 0%, 81%);
+  padding: 0 30px;
 }
 
 .search {
@@ -103,7 +103,29 @@ button {
 .sidebar {
   background-color: var(--sidebar-blue);
   grid-row: 1 / span 2;
+  display: grid;
+  padding: 10px;
+  color: var(--header-white);
+  grid-auto-rows: min-content;
+  row-gap: 35px;
 }
+
+.logo,
+li {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 8fr;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+ul {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
 
 .main-content { 
   background-color: var(--main-background);
@@ -168,15 +190,22 @@ h3.main-title {
 }
 
 .announcement-card h4,
-.trending-card p  {
+.trending-card p,
+.project-card p  {
   font-size: 14px;
 }
 
-.announcement-card .border {
-  border-top: 1px solid gray;
+.project-card p,
+.announcement-card p {
+  color: hsl(0, 0%, 64%)
 }
 
-.announcement-card p {
+.announcement-card .border {
+  border-top: 1px solid hsl(0, 0%, 64%);
+}
+
+.announcement-card p,
+.profile-greeting p {
   font-size: 12px;
 }
 
